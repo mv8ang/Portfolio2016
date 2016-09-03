@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react'
-import { AppBar, IconButton, Layout,  NavDrawer, List, ListItem, Panel } from 'react-toolbox'
-import { LinkContainer, IndexLinkContainer } from 'react-router-bootstrap'
+// import { LinkContainer, IndexLinkContainer } from 'react-router-bootstrap'
+import { Link, IndexLink } from 'react-router'
 import './App.css';
 
 class App extends Component {
@@ -25,39 +25,23 @@ class App extends Component {
     const { children } = this.props
 
     return (
-      <Layout>
-        <NavDrawer
-          active={this.state.drawerActive}
-          pinned={this.state.drawerPinned}
-          onOverlayClick={this.toggleDrawerActive}
-          permanentAt='md'
-          width='normal'
-        >
-          <List>
-            <IndexLinkContainer to='/'>
-              <ListItem caption='Home' leftIcon='home' selectable ripple />
-            </IndexLinkContainer>
-            <LinkContainer to='portfolio'>
-              <ListItem caption='My Portfolio' leftIcon='fingerprint' selectable ripple />
-            </LinkContainer>
-            <LinkContainer to='services'>
-              <ListItem caption='My Services' leftIcon='build' selectable ripple />
-            </LinkContainer>
-            <LinkContainer to='about'>
-              <ListItem caption='About' leftIcon='face' selectable ripple />
-            </LinkContainer>
-          </List>
-        </NavDrawer>
-
-        <Panel>
-          <AppBar>
-            <IconButton icon='menu' inverse={true} onClick={this.toggleDrawerActive} />
-          </AppBar>
-
-          {children}
-
-        </Panel>
-      </Layout>
+      <div>
+        <ul>
+          <IndexLink to='/'>
+            <li>Home</li>
+          </IndexLink>
+          <Link to='portfolio'>
+            <li>Portfolio</li>
+          </Link>
+          <Link to='services'>
+            <li>Services</li>
+          </Link>
+          <Link to='about'>
+            <li>About</li>
+          </Link>
+        </ul>
+        {children}
+      </div>
     );
   }
 }
