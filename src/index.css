@@ -1,7 +1,8 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 20px;
   font-family: sans-serif;
+  background: rgb(243, 243, 243);
 }
 
 #root {
@@ -10,5 +11,14 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  overflow-y: auto;
+  overflow-x: hidden;
+  overflow-y: overlay;
+}
+
+.page {
+  padding-top: 120px;
+}
+
+.row {
+  max-width: 880px !important; /* overwrites Foundation default */
 }
