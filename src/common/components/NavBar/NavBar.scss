@@ -1,0 +1,38 @@
+@import '../../styles/typo';
+@import '../../styles/sizes';
+@import '../../styles/colors';
+
+.navBarOuter {
+  position: fixed;
+  height: $default-unit * 8;
+  width: 100%;
+  line-height: 80px;
+  border-bottom: 1px solid rgba(0,0,0,.7);
+  background: $navbar-bg;
+  font-family: $navbar-font;
+  color: white;
+  z-index: 1;
+}
+
+.navBarInner {
+  display: flex;
+  max-width: 880px;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.navItems, .navLogo {
+  display: inline-block;
+  margin: auto auto auto 0;
+}
+
+.navItems {
+  li {
+    display: inline-block;
+    margin: auto auto auto 0;
+
+    &:first-child {
+      margin-right: 30px;
+    }
+  }
+}
