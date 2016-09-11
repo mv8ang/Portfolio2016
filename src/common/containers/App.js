@@ -1,6 +1,5 @@
 import React, { Component, PropTypes } from 'react'
 import NavBar from '../components/NavBar/NavBar'
-import { Row } from 'react-foundation'
 import './App.css';
 
 class App extends Component {
@@ -14,10 +13,10 @@ class App extends Component {
     const { children } = this.props
 
     return (
-      <Row>
+      <div>
         <NavBar />
         {children}
-      </Row>
+      </div>
     );
   }
 }

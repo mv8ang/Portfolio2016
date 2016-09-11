@@ -1,30 +1,34 @@
 import React from 'react'
 import { Link, IndexLink } from 'react-router'
-import { Menu, MenuItem } from 'react-foundation'
+import { menuItems } from '../../lib/menuItems.js'
+import styles from './NavBar.scss'
 
-const menuItems = [
-  {name: 'about'},
-  {name: 'services'},
-  {name: 'portfolio'},
-]
-
-let items = menuItems.map(item => {
+const items = menuItems.map(item => {
   return (
-    <MenuItem>
+    <li>
       <Link to={item.name}>
         {item.name.charAt(0).toUpperCase() + item.name.slice(1)}
       </Link>
-    </MenuItem>
+    </li>
   )
 })
 
 const NavBar = () => (
-  <Menu alignment='right'>
-    {items}
-    <MenuItem>
-      <IndexLink to='/'>Home</IndexLink>
-    </MenuItem>
-  </Menu>
+  <nav className={styles.navBarOuter}>
+    <div className={styles.navBarInner}>
+      <span className={styles.navLogo}>
+        <p>Mladen Angelov</p>
+        <p>front-end developer</p>
+      </span>
+      <ul className={styles.navItems}>
+        <li>
+          <IndexLink to='/'>Showcase</IndexLink>
+        </li>
+        {items}
+      </ul>
+      <span className={styles.navEmail}>mv8.angelov@gmail.com</span>
+    </div>
+  </nav>
 )
 
 export default NavBar
