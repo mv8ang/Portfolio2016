@@ -7,7 +7,7 @@ import styles from './NavBar.scss'
 const items = menuItems.map(item => {
   return (
     <li>
-      <Link to={item.name} key={item.name}>
+      <Link to={item.name} key={item.name} className={styles.navLink} activeClassName={styles.activeLink}>
         {item.name.charAt(0).toUpperCase() + item.name.slice(1)}
       </Link>
     </li>
@@ -23,7 +23,7 @@ const NavBar = () => (
       </span>
       <ul className={styles.navItems}>
         <li>
-          <IndexLink to='/' key='showcase'>Showcase</IndexLink>
+          <IndexLink to='/' key='showcase' className={styles.navLink} activeClassName={styles.activeLink}>Showcase</IndexLink>
         </li>
         {items}
       </ul>
