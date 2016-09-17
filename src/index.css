@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: rgb(243, 243, 243);
+  background: rgb(255, 255, 255);
   overflow-x: hidden;
   overflow-y: overlay;
 }
@@ -20,6 +20,10 @@ body {
 }
 
 /* Foundation overwrites */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 .row {
   max-width: 880px !important;
 }
