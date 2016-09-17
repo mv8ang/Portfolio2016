@@ -1,4 +1,9 @@
 @import '../styles/colors';
+@import '../styles/partials/pageTitle';
+
+.tags {
+  float: right;
+}
 
 .projectPreviewContainer {
   width: 100%;
@@ -33,9 +38,13 @@
   }
 
   span {
-  	float: right;
-  	color: #3c4a50;
-  	font-size: 1.4em;
+    padding: 5px;
+    font-size: 11px;
+    margin-left: 5px;
+
+    &:hover {
+      transform: translate3d(0, 20%, 0);
+    }
   }
 
   h2, span {
@@ -56,11 +65,6 @@
       transform: translate3d(0,-10%,0);
     }
 
-    span:hover,
-    span:focus {
-      color: #252d31;
-    }
-
     .projectPreviewInfo, h2, span {
       transform: translate3d(0,0,0);
     }
@@ -70,15 +74,23 @@
     }
 
     span:first-child {
-    	transition-delay: 0.2s !important;
+      margin-left: 0;
+    	transition-delay: 0.22s;
     }
-
     span:nth-child(2) {
-    	transition-delay: 0.15s !important;
+    	transition-delay: 0.19s;
     }
-
     span:nth-child(3) {
-      transition-delay: 0.1s !important;
+      transition-delay: 0.26s;
+    }
+    span:nth-child(4) {
+      transition-delay: 0.18s;
+    }
+    span:nth-child(5) {
+      transition-delay: 0.1s;
+    }
+    span:nth-child(6) {
+      transition-delay: 0.07s;
     }
   }
 }
@@ -92,7 +104,7 @@
 	bottom: 0;
 	padding: 1em;
 	height: 4.75em;
-	background: #fff;
+	background: rgb(255, 255, 255);
 	color: #3c4a50;
 	transition: transform 0.35s;
 	transform: translate3d(0,100%,0);
