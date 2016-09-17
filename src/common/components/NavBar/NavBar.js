@@ -4,7 +4,7 @@ import { Link, IndexLink } from 'react-router'
 import { menuItems } from '../../lib/menuItems.js'
 import styles from './NavBar.scss'
 
-const items = menuItems.map(item => {
+const _generateItems = menuItems.map(item => {
   return (
     <li>
       <Link to={item.name} key={item.name} className={styles.navLink} activeClassName={styles.activeLink}>
@@ -19,13 +19,14 @@ const NavBar = () => (
     <div className={styles.navBarInner}>
       <span className={styles.navLogo}>
         <p>Mladen Angelov</p>
-        <p>front-end developer</p>
       </span>
       <ul className={styles.navItems}>
         <li>
-          <IndexLink to='/' key='showcase' className={styles.navLink} activeClassName={styles.activeLink}>Showcase</IndexLink>
+          <IndexLink to='/' key='showcase' className={styles.navLink} activeClassName={styles.activeLink}>
+            Showcase
+          </IndexLink>
         </li>
-        {items}
+        {_generateItems}
       </ul>
       <a href='mailto:mv8.angelov@gmail.com'>
         <Badge color='alert' className={styles.navEmail}>
