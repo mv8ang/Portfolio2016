@@ -19,6 +19,11 @@ body {
   padding-top: 120px;
 }
 
+/* Foundation overwrites */
 .row {
-  max-width: 880px !important; /* overwrites Foundation default */
+  max-width: 880px !important;
+}
+
+.badge {
+  border-radius: 0 !important;
 }

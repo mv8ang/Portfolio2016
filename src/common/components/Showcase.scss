@@ -1,4 +1,4 @@
-@import '../../styles/colors';
+@import '../styles/colors';
 
 .projectPreviewContainer {
   width: 100%;
@@ -32,33 +32,18 @@
   	display: inline-block;
   }
 
-  a.info {
-    display: inline-block;
-    text-decoration: none;
-    padding: 7px 14px;
-    text-transform: uppercase;
-  	color: #fff;
-  	border: 1px solid #fff;
-  	margin: 50px 0 0 0;
-  	background-color: transparent;
-
-    &:hover {
-      box-shadow: 0 0 5px #fff;
-    }
-  }
-
-  p.icon-links a {
+  span {
   	float: right;
   	color: #3c4a50;
   	font-size: 1.4em;
   }
 
-  h2, p.icon-links a {
+  h2, span {
   	transition: transform 0.35s;
   	transform: translate3d(0,200%,0);
   }
 
-  p.icon-links a span:before {
+  span span:before {
   	display: inline-block;
   	padding: 8px 10px;
   	speak: none;
@@ -71,12 +56,12 @@
       transform: translate3d(0,-10%,0);
     }
 
-    p.icon-links a:hover,
-    p.icon-links a:focus {
+    span:hover,
+    span:focus {
       color: #252d31;
     }
 
-    .projectPreviewInfo, h2, p.icon-links a {
+    .projectPreviewInfo, h2, span {
       transform: translate3d(0,0,0);
     }
 
@@ -84,16 +69,16 @@
       transition-delay: 0.05s;
     }
 
-    p.icon-links a:first-child {
-    	transition-delay: 0.2s;
+    span:first-child {
+    	transition-delay: 0.2s !important;
     }
 
-    p.icon-links a:nth-child(2) {
-    	transition-delay: 0.15s;
+    span:nth-child(2) {
+    	transition-delay: 0.15s !important;
     }
 
-    p.icon-links a:nth-child(3) {
-      transition-delay: 0.1s;
+    span:nth-child(3) {
+      transition-delay: 0.1s !important;
     }
   }
 }

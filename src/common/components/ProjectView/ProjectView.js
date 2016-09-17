@@ -1,9 +1,17 @@
 import React from 'react'
+import { Row } from 'react-foundation'
+import { ProjectListViewData } from '../../lib/ProjectListViewData'
 
-const ProjectView = () => {
+const ProjectView = (props) => {
+  const project = ProjectListViewData.find(x => x.name === props.params.projectName)
+
   return (
     <div className="page">
-      <p>penis</p>
+      <Row>
+        <p>test</p>
+        {project.name}
+        {project.description}
+      </Row>
     </div>
   )
 }
