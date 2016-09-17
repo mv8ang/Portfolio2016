@@ -38,3 +38,25 @@
     }
   }
 }
+
+.navLogo {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Russo One', sans-serif;
+  font-size: 16px;
+
+  p:first-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.navEmail {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14px;
+  &:hover {
+    .badge-alert {
+      background: blue !important;
+    }
+  }
+}

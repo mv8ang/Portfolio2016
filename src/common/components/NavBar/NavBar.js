@@ -1,4 +1,5 @@
 import React from 'react'
+import { Badge } from 'react-foundation'
 import { Link, IndexLink } from 'react-router'
 import { menuItems } from '../../lib/menuItems.js'
 import styles from './NavBar.scss'
@@ -26,7 +27,11 @@ const NavBar = () => (
         </li>
         {items}
       </ul>
-      <span className={styles.navEmail}>mv8.angelov@gmail.com</span>
+      <a href='mailto:mv8.angelov@gmail.com'>
+        <Badge color='alert' className={styles.navEmail}>
+          mv8.angelov@gmail.com
+        </Badge>
+      </a>
     </div>
   </nav>
 )
