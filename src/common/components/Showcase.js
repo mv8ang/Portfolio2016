@@ -13,14 +13,16 @@ const generateProjectListView = ProjectListViewData.map(item => {
         <div className={styles.projectPreviewInfo}>
           <h2>{item.name}</h2>
           <div className={styles.tags}>
-            <Badge color='warning'>
-              {item.type}
-            </Badge>
+
             {item.technologies.map((tech, i) => (
-              <Badge color='info' key={`tech-${i}`}>
+              <Badge className={styles.tagBadge} key={`tech-${i}`}>
                 {tech}
               </Badge>
             ))}
+
+            <Badge color='success'>
+              {item.type}
+            </Badge>
           </div>
         </div>
       </div>
