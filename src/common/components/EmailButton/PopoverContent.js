@@ -6,7 +6,7 @@ const PopoverContent = () => {
   return(
     <span>
       <h4>Copied!</h4>
-      <a href='//mailto:mv8.angelov@gmail.com'>
+      <a href='//mailto:mv8.angelov@gmail.com' target="_blank">
         <Badge color='success' className={styles.popoverBadge}>
           send mail
         </Badge>

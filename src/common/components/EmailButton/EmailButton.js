@@ -21,19 +21,27 @@ class EmailButton extends Component {
   _onOut = () => {
     this.setState({text: 'mv8.angelov@gmail.com'})
   }
-  _onClick = () => {
+  _togglePopover = () => {
     this.setState({popoverOpen: !this.state.popoverOpen})
+  }
+  _hidePopover = () => {
+    this.setState({popoverOpen: false})
   }
 
   render() {
     return(
         <a href='#' onClick={(e) => {e.preventDefault()}}>
-          <Popover isOpen={this.state.popoverOpen} body={<PopoverContent />} onOuterAction={this._onClick} preferPlace='below'>
+          <Popover
+            isOpen={this.state.popoverOpen}
+            body={<PopoverContent />}
+            onOuterAction={this._hidePopover}
+            preferPlace='below'
+          >
             <CopyToClipboard text='mv8.angelov@gmail.com'>
               <Badge color='alert' className={styles.navEmail}
                 onMouseOver={this._onHover}
                 onMouseOut={this._onOut}
-                onClick={this._onClick}
+                onClick={this._togglePopover}
               >
                 {this.state.text}
               </Badge>
