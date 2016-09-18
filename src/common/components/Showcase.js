@@ -2,7 +2,6 @@ import React from 'react'
 import { Row, Column, Badge } from 'react-foundation'
 import { ProjectListViewData } from '../lib/ProjectListViewData'
 import { LinkContainer } from 'react-router-bootstrap'
-import { Link } from 'react-router'
 import styles from './Showcase.scss'
 
 const generateProjectListView = ProjectListViewData.map(item => {
