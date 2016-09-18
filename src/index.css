@@ -1,3 +1,7 @@
+/* ****************************************************** */
+/* GLOBAL STYLES available to all components at all times */
+/* ****************************************************** */
+
 body {
   margin: 0;
   padding: 0;
@@ -34,4 +38,14 @@ h1, h2, h3, h4, h5, h6 {
 
 a:hover {
   color: #fff;
+}
+
+/* ******************* */
+
+.Popover-body {
+  width: 185px;
+  padding: 2rem 3rem;
+  color: #fff;
+  background: rgba(10, 10, 10, .9);
+  text-align: center;
 }
