@@ -7,7 +7,7 @@ import styles from './NavBar.scss'
 const _generateItems = menuItems.map(item => {
   return (
     <li>
-      <Link to={item.name} key={item.name} className={styles.navLink} activeClassName={styles.activeLink}>
+      <Link to={item.name} key={`key-${item.name}`} className={styles.navLink} activeClassName={styles.activeLink}>
         {item.name.charAt(0).toUpperCase() + item.name.slice(1)}
       </Link>
     </li>
@@ -24,7 +24,7 @@ const NavBar = () => (
       </span>
       <ul className={styles.navItems}>
         <li>
-          <IndexLink to='/' key='showcase' className={styles.navLink} activeClassName={styles.activeLink}>
+          <IndexLink to='/' key='index' className={styles.navLink} activeClassName={styles.activeLink}>
             Showcase
           </IndexLink>
         </li>

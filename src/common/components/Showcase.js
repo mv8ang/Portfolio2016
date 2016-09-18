@@ -16,8 +16,8 @@ const generateProjectListView = ProjectListViewData.map(item => {
             <Badge color='warning'>
               {item.type}
             </Badge>
-            {item.technologies.map(tech => (
-              <Badge color='primary'>
+            {item.technologies.map((tech, i) => (
+              <Badge color='info' key={`tech-${i}`}>
                 {tech}
               </Badge>
             ))}
