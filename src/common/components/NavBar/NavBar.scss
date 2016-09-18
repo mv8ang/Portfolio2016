@@ -9,10 +9,10 @@ $nav-height-control: $default-unit * 5;
   position: fixed;
   height: $nav-height-control;
   width: 100%;
-  line-height: $nav-height-control;
-  border-bottom: 1px solid rgba(0,0,0,.7);
   background: $navbar-bg;
+  border-bottom: 1px solid rgba(0,0,0,.7);
   font-family: $navbar-font;
+  line-height: $nav-height-control;
   color: #fff;
   z-index: 1;
 }
@@ -44,16 +44,9 @@ $nav-height-control: $default-unit * 5;
   font-family: 'Russo One', sans-serif;
   font-size: 16px;
 
-  p:first-of-type {
-    margin-bottom: 0;
+  a {
+    color: #fff;
   }
-}
-
-.navEmail {
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 14px;
-  line-height: 2;
 }
 
 .navLink {

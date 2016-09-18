@@ -1,7 +1,7 @@
 import React from 'react'
-import { Badge } from 'react-foundation'
 import { Link, IndexLink } from 'react-router'
-import { menuItems } from '../../lib/menuItems.js'
+import { menuItems } from '../../lib/menuItems'
+import EmailButton from '../EmailButton/EmailButton'
 import styles from './NavBar.scss'
 
 const _generateItems = menuItems.map(item => {
@@ -18,7 +18,9 @@ const NavBar = () => (
   <nav className={styles.navBarOuter}>
     <div className={styles.navBarInner}>
       <span className={styles.navLogo}>
-        <p>Mladen Angelov</p>
+        <Link to='/' key='logo'>
+          Mladen Angelov
+        </Link>
       </span>
       <ul className={styles.navItems}>
         <li>
@@ -28,11 +30,7 @@ const NavBar = () => (
         </li>
         {_generateItems}
       </ul>
-      <a href='mailto:mv8.angelov@gmail.com'>
-        <Badge color='alert' className={styles.navEmail}>
-          mv8.angelov@gmail.com
-        </Badge>
-      </a>
+      <EmailButton />
     </div>
   </nav>
 )
