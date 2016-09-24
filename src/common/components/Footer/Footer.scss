@@ -1,5 +1,6 @@
 @import '../../styles/colors';
 @import '../../styles/typo';
+@import '../../styles/sizes';
 
 .footerText {
   color: $light-grey;
@@ -8,4 +9,17 @@
   font-family: $default-font;
   text-align: center;
   margin: 20px 0;
+}
+
+.horizontalDivider {
+  width: 50%;
+}
+
+.socialIcon {
+  width: 40px !important;
+  height: 40px !important;
+
+  &:not(:first-of-type) {
+    margin-left: $default-unit;
+  }
 }
