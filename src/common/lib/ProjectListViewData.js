@@ -1,14 +1,31 @@
 export const ProjectListViewData = [
   {
-    image: 'https://placeimg.com/880/500/tech',
+    coverImage: 'https://placeimg.com/880/500/tech',
+    images: [
+      'https://placeimg.com/880/500/tech/grayscale',
+      'https://placeimg.com/880/500/tech/grayscale',
+      'https://placeimg.com/880/500/tech/grayscale',
+      'https://placeimg.com/880/500/tech/grayscale',
+    ],
     name: 'scienceathome',
     type: 'Web App',
     technologies: ['Meteor', 'React', 'Redux', 'ES6', 'SCSS'],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum rem vitae non eligendi nostrum culpa qui obcaecati fugiat, consectetur sit eum aliquid totam magni. Culpa, tenetur, eligendi. Quis, dolore non.',
+    description: [
+      'ScienceAtHome is a project developed by Aarhus University. It harnesses the brain-power of thousands of people around the world through gamification, and uses the data to help build a quantum computer. Fascinating!',
+      'I was part of a two-man team that turned a hi-fidelity mock-up into an interactive, easy to modify web-app that hosts the project.',
+      ' Immediately after its release, the website was featured in a number of major online media such as Nature, Science, The Verge, Gizmodo and Ars Technica. It performed extremely well under the high load, and given the tight deadline that we had for finishing it, we were ecstatic.',
+      'Working in a close relationship with the amazing team at AU jump-started my love for JS with npm and React.',
+    ],
     url: 'https://www.scienceathome.org/',
   },
   {
-    image: 'https://placeimg.com/880/500/tech',
+    coverImage: 'https://placeimg.com/880/500/tech',
+    images: [
+      'https://placeimg.com/880/500/tech/grayscale',
+      'https://placeimg.com/880/500/tech/grayscale',
+      'https://placeimg.com/880/500/tech/grayscale',
+      'https://placeimg.com/880/500/tech/grayscale',
+    ],
     name: 'regnmedpenge',
     type: 'Website',
     technologies: ['WordPress', 'SCSS'],
@@ -16,7 +33,13 @@ export const ProjectListViewData = [
     url: 'http://regnmedpenge.dk/',
   },
   {
-    image: 'https://placeimg.com/880/500/tech',
+    coverImage: 'https://placeimg.com/880/500/tech',
+    images: [
+      'https://placeimg.com/880/500/tech/grayscale',
+      'https://placeimg.com/880/500/tech/grayscale',
+      'https://placeimg.com/880/500/tech/grayscale',
+      'https://placeimg.com/880/500/tech/grayscale',
+    ],
     name: 'hivebeat',
     type: 'Web App',
     technologies: ['React', 'Redux', 'ES6', 'SCSS/modules'],
@@ -24,17 +47,29 @@ export const ProjectListViewData = [
     url: 'https://www.hivebeat.com/',
   },
   {
-    image: 'https://placeimg.com/880/500/tech',
+    coverImage: 'https://placeimg.com/880/500/tech',
+    images: [
+      'https://placeimg.com/880/500/tech/grayscale',
+      'https://placeimg.com/880/500/tech/grayscale',
+      'https://placeimg.com/880/500/tech/grayscale',
+      'https://placeimg.com/880/500/tech/grayscale',
+    ],
     name: 'voksen',
     type: 'Webshop',
     technologies: ['Magento', 'JavaScript', 'CSS'],
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet minus unde, tempore dicta facere perferendis voluptatem in inventore enim quaerat molestiae ratione expedita architecto ipsa ab ullam mollitia asperiores veniam.',
-  },
+    },
   {
-    image: 'https://placeimg.com/880/500/tech',
+    coverImage: 'https://placeimg.com/880/500/tech',
+    images: [
+      'https://placeimg.com/880/500/tech/grayscale',
+      'https://placeimg.com/880/500/tech/grayscale',
+      'https://placeimg.com/880/500/tech/grayscale',
+      'https://placeimg.com/880/500/tech/grayscale',
+    ],
     name: 'portfolio2016',
     type: 'SPA',
-    technologies: ['React', 'ES6', 'SCSS/modules'],
+    technologies: ['npm', 'React', 'ES6', 'SCSS/modules'],
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eius dicta voluptates nulla inventore at obcaecati rem architecto, eaque incidunt. Cupiditate odio aspernatur saepe ipsum nihil velit quae cum fuga?',
   }
 ]

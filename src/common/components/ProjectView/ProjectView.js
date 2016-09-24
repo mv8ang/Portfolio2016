@@ -3,56 +3,65 @@ import { Row, Column, Button, Label } from 'react-foundation'
 import { ProjectListViewData } from '../../lib/ProjectListViewData'
 import styles from './ProjectView.scss'
 
-const _generateTags = (project) => (
-  project.technologies.map(tech => (
+const _generateTags = (technologies) => (
+  technologies.map(tech => (
     <Label className={styles.projectTechLabel}>{tech}</Label>
+  ))
+)
+
+const _generateImages = (images) => (
+  images.map(image => (
+    <div className={styles.projectImage}>
+      <img src={image} alt=""/>
+    </div>
+  ))
+)
+
+const _generateDescriptionParagraphs = (paragraphs) => (
+  paragraphs.map(paragraph => (
+    <p>{paragraph}</p>
   ))
 )
 
 const ProjectView = (props) => {
   const project = ProjectListViewData.find(x => x.name === props.params.projectName)
+  const { name, description, technologies, images, type, url } = project
 
   return (
     <div className="page">
       <Row>
 
         <Column small={12} style={{ display: 'flex', alignItems: 'center'}}> {/* ouch */}
-          <h1 className={styles.pageTitle}>{project.name}</h1>
+          <h1 className={styles.pageTitle}>{name}</h1>
           <Label color='success' className={styles.projectTypeLabel}>
-            {project.type}
+            {type}
           </Label>
         </Column>
       </Row>
       <Row>
         <Column small={12} large={4} pushOnLarge={8}>
           <h5 className={styles.projectSubtitles}>about the project:</h5>
-          {project.description}
-          <br /><br />
+          {_generateDescriptionParagraphs(description)}
+          <br />
+
           <h5 className={styles.projectSubtitles}>what I  used:</h5>
           <div className={styles.tagContainer}>
-            {_generateTags(project)}
+            {_generateTags(technologies)}
           </div>
-          {project.url ? (
+
+          {url ? (
             <span>
               <br />
               <h5 className={styles.projectSubtitles}>visit website</h5>
-              <a href={project.url} target="_blank">
-                <Button>{project.url}</Button>
+              <a href={url} target="_blank">
+                <Button color="alert">{url}</Button>
               </a>
             </span>
           ) : ''}
         </Column>
 
         <Column small={12} large={8} pullOnLarge={4}>
-          <div className={styles.projectImage}>
-            <img src={project.image} alt=""/>
-          </div>
-          <div className={styles.projectImage}>
-            <img src={project.image} alt=""/>
-          </div>
-          <div className={styles.projectImage}>
-            <img src={project.image} alt=""/>
-          </div>
+          {_generateImages(images)}
         </Column>
 
       </Row>
