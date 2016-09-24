@@ -1,0 +1,31 @@
+@import '../../styles/partials/pageTitle';
+@import '../../styles/sizes';
+@import '../../styles/colors';
+
+.projectImage {
+  margin-bottom: $space-between-images;
+}
+
+.projectTypeLabel {
+  font-size: 16px;
+  margin-left: $space-between-images;
+}
+
+.tagContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  flex-grow: 1;
+}
+
+.projectTechLabel {
+  padding: 5px 10px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  background-color: $light-grey;
+}
+
+.projectSubtitles {
+  color: $light-grey;
+}
