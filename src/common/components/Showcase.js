@@ -8,7 +8,7 @@ const generateProjectListView = ProjectListViewData.map(item => {
   return (
     <LinkContainer to={`showcase/${item.name}`} key={item.name}>
       <div className={styles.projectPreviewContainer}>
-        <img src={item.image} alt="" />
+        <img src={item.coverImage} alt="" />
 
         <div className={styles.projectPreviewInfo}>
           <h2>{item.name}</h2>
