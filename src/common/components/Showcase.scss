@@ -4,6 +4,12 @@
 
 .tags {
   float: right;
+
+  @media (max-width: $phone) {
+    display: block;
+    clear: both;
+    float: left;
+  }
 }
 
 .projectPreviewContainer {
@@ -25,6 +31,13 @@
 
   }
 
+  h2, span {
+    transition: transform 0.35s;
+    @media (min-width: 48em) {
+      transform: translate3d(0,200%,0);
+    }
+  }
+
   h2 {
     position: relative;
     margin: 0px;
@@ -41,16 +54,12 @@
   span {
     padding: 5px;
     font-size: 11px;
-    margin-left: 5px;
-
+    &:not(:first-of-type) {
+      margin-left: 5px;
+    }
     &:hover {
       transform: translate3d(0, 20%, 0);
     }
-  }
-
-  h2, span {
-  	transition: transform 0.35s;
-  	transform: translate3d(0,200%,0);
   }
 
   span span:before {
@@ -106,8 +115,11 @@
 	height: 4.75em;
 	background: rgb(255, 255, 255);
 	color: #3c4a50;
-	transition: transform 0.35s;
-	transform: translate3d(0,100%,0);
+
+  @media (min-width: 48em) {
+  	transition: transform 0.35s;
+  	transform: translate3d(0,100%,0);
+  }
 }
 
 .tagBadge {

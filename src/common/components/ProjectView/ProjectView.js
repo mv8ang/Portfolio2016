@@ -9,10 +9,10 @@ const _generateTags = (technologies) => (
   ))
 )
 
-const _generateImages = (images) => (
-  images.map(image => (
+const _generateImages = (thumbnails) => (
+  thumbnails.map(thumbnail => (
     <div className={styles.projectImage}>
-      <img src={image} alt=""/>
+      <img src={thumbnail} alt=""/>
     </div>
   ))
 )
@@ -25,7 +25,7 @@ const _generateDescriptionParagraphs = (paragraphs) => (
 
 const ProjectView = (props) => {
   const project = ProjectListViewData.find(x => x.name === props.params.projectName)
-  const { name, description, technologies, images, type, url } = project
+  const { name, description, technologies, thumbnails, type, url } = project
 
   return (
     <div className="page">
@@ -61,7 +61,7 @@ const ProjectView = (props) => {
         </Column>
 
         <Column small={12} large={8} pullOnLarge={4}>
-          {_generateImages(images)}
+          {_generateImages(thumbnails)}
         </Column>
 
       </Row>

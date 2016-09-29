@@ -1,30 +1,29 @@
 export const ProjectListViewData = [
   {
-    coverImage: 'https://placeimg.com/880/500/tech',
-    images: [
-      'https://placeimg.com/880/500/tech/grayscale',
-      'https://placeimg.com/880/500/tech/grayscale',
-      'https://placeimg.com/880/500/tech/grayscale',
-      'https://placeimg.com/880/500/tech/grayscale',
+    coverImage: '../../../src/static/images/scienceathome/cover.jpg',
+    thumbnails: [
+      '../../../src/static/images/scienceathome/Screenshot_1.png',
+      '../../../src/static/images/scienceathome/Screenshot_2.png',
+      '../../../src/static/images/scienceathome/Screenshot_3.png',
     ],
     name: 'scienceathome',
     type: 'Web App',
     technologies: ['Meteor', 'React', 'Redux', 'ES6', 'SCSS'],
     description: [
       'ScienceAtHome is a project developed by Aarhus University. It harnesses the brain-power of thousands of people around the world through gamification, and uses the data to help build a quantum computer. Fascinating!',
-      'I was part of a two-man team that turned a hi-fidelity mock-up into an interactive, easy to modify web-app that hosts the project.',
+      'I was part of a two-man team that turned a hi-fidelity mock-up into an interactive, modular and easy to modify web-app that hosts the project.',
       'Immediately after its release, the website was featured in a number of major online media such as Nature, Science, The Verge, Gizmodo and Ars Technica. It performed extremely well under the high load, and given the tight deadline that we had for finishing it, we were ecstatic.',
       'Working in a close relationship with the amazing team at AU jump-started my love for JS with Meteor and React, and was an eye-opener to ES6',
     ],
     url: 'https://www.scienceathome.org/',
   },
+
   {
-    coverImage: 'https://placeimg.com/880/500/tech',
-    images: [
-      'https://placeimg.com/880/500/tech/grayscale',
-      'https://placeimg.com/880/500/tech/grayscale',
-      'https://placeimg.com/880/500/tech/grayscale',
-      'https://placeimg.com/880/500/tech/grayscale',
+    coverImage: '../../../src/static/images/regnmedpenge/cover.png',
+    thumbnails: [
+      '../../../src/static/images/regnmedpenge/Screenshot_2.png',
+      '../../../src/static/images/regnmedpenge/Screenshot_1.png',
+      '../../../src/static/images/regnmedpenge/Screenshot_3.png',
     ],
     name: 'regnmedpenge',
     type: 'Website',
@@ -36,32 +35,32 @@ export const ProjectListViewData = [
     ],
     url: 'http://regnmedpenge.dk/',
   },
+
   {
-    coverImage: 'https://placeimg.com/880/500/tech',
-    images: [
-      'https://placeimg.com/880/500/tech/grayscale',
-      'https://placeimg.com/880/500/tech/grayscale',
-      'https://placeimg.com/880/500/tech/grayscale',
-      'https://placeimg.com/880/500/tech/grayscale',
+    coverImage: '../../../src/static/images/hivebeat/cover.jpg',
+    thumbnails: [
+      '../../../src/static/images/hivebeat/Screenshot_1.png',
+      '../../../src/static/images/hivebeat/Screenshot_2.png',
+      '../../../src/static/images/hivebeat/Screenshot_3.png',
     ],
     name: 'hivebeat',
     type: 'Web App',
     technologies: ['React', 'Redux', 'ES6', 'SCSS/modules'],
     description: [
-      'I started work on Hivebeat towards the end of its lifecycle, as a first task at my internship company.',
+      'Hivebeat is a platform to help companies organise events in a more efficient way. I started work on the project towards the end of its lifecycle, as a first task at my current internship company.',
       'This is where I mostly kept developing my JS and React skills. Even though I dabbled in the back-end side of things, my work here primarily included working with ES6 and npm modules, making things work in the browser.',
       'A great addition to my knowledge of the React family was the inclusion of Redux, which is unavoidable when managing the state of a web-app that’s not a Single-Page Application.',
       'The stylesheets were written in SCSS again, only this time using heavily modified Semantic UI elements as a base. To avoid falling into an insanity pit brim-full of overwrites and hellfire, we used CSS modules. It was the first time I’d used that technology, but its specificity-based and ultra-modular nature grew on me in no time.',
     ],
     url: 'https://www.hivebeat.com/',
   },
+
   {
-    coverImage: 'https://placeimg.com/880/500/tech',
-    images: [
-      'https://placeimg.com/880/500/tech/grayscale',
-      'https://placeimg.com/880/500/tech/grayscale',
-      'https://placeimg.com/880/500/tech/grayscale',
-      'https://placeimg.com/880/500/tech/grayscale',
+    coverImage: '../../../src/static/images/voksen/cover.png',
+    thumbnails: [
+      '../../../src/static/images/voksen/Screenshot_1_small.png',
+      '../../../src/static/images/voksen/Screenshot_2_small.png',
+      '../../../src/static/images/voksen/Screenshot_3_small.png',
     ],
     name: 'voksen',
     type: 'Webshop',
@@ -72,14 +71,13 @@ export const ProjectListViewData = [
       'As an e-commerce platform, I chose Magento. I modified the default theme heavily to make it reflect the conclusions of our research findings. The design was provided by Marta Okulicz, who was working on the project with me.',
       'The new technologies that this project introduced to me were Gulp (because of the simple build process for SCSS) and Git (because Magento is a magical place, where things break at random). For all my resentment at the platform, it was worth the time and effort, if only for bringing those two into my life.',
     ],
-    },
+  },
+
   {
-    coverImage: 'https://placeimg.com/880/500/tech',
-    images: [
-      'https://placeimg.com/880/500/tech/grayscale',
-      'https://placeimg.com/880/500/tech/grayscale',
-      'https://placeimg.com/880/500/tech/grayscale',
-      'https://placeimg.com/880/500/tech/grayscale',
+    coverImage: '../../../src/static/images/portfolio/cover.jpg',
+    thumbnails: [
+      '../../../src/static/images/portfolio/Screenshot_1.png',
+      '../../../src/static/images/portfolio/Screenshot_2.png',
     ],
     name: 'portfolio2016',
     type: 'SPA',
@@ -87,25 +85,10 @@ export const ProjectListViewData = [
     description: [
       'The portfolio that you’re looking at right now.',
       'I’ve cherry-picked the technologies I enjoy working with the most: React and SCSS modules, compiled with Webpack. Version control is handled with Git.',
+      'I\'ve had fun making it and I hope you\'re enjoying it!',
+      'Please hire me.',
       'For a full code review, please check the link.',
     ],
     url: 'https://github.com/mv8ang/Portfolio2016',
   },
-  {
-    coverImage: 'https://placeimg.com/880/500/tech',
-    images: [
-      'https://placeimg.com/880/500/tech/grayscale',
-      'https://placeimg.com/880/500/tech/grayscale',
-      'https://placeimg.com/880/500/tech/grayscale',
-      'https://placeimg.com/880/500/tech/grayscale',
-    ],
-    name: 'repository',
-    type: 'Miscellaneous',
-    technologies: ['React', 'JS', 'ES6', 'CSS', 'SCSS/modules', 'Gulp', 'Webpack'],
-    description: [
-      'My GitHub account is where you can find all the random bits and pieces of coding that I’ve done for myself, including this portfolio.',
-      'The repositories include cool CSS trickery (css-playground), trying out technologies for the first time (Redux, React-Router, Meteor), as well as templates set-up for later use: bare-bone React and Meteor apps, a CSS framework, and a set-up ready to work with Bower and Gulp.',
-    ],
-    url: 'https://github.com/mv8ang?tab=repositories',
-  }
 ]

@@ -12,6 +12,7 @@ class EmailButton extends Component {
     this.state = {
       text: 'mv8.angelov@gmail.com',
       popoverOpen: false,
+      windowWidth: window.innerWidth,
     }
   }
 
@@ -27,6 +28,17 @@ class EmailButton extends Component {
   _hidePopover = () => {
     this.setState({popoverOpen: false})
   }
+  _onResize = () => {
+    this.setState({windowWidth: window.innerWidth})
+  }
+
+  componentDidMount = () => {
+    window.addEventListener('resize', this._onResize);
+  }
+
+  componentWillUnmount = () => {
+    window.removeEventListener('resize', this._onResize);
+  }
 
   render() {
     return(
@@ -36,6 +48,7 @@ class EmailButton extends Component {
             body={<PopoverContent />}
             onOuterAction={this._hidePopover}
             preferPlace='below'
+            style={{transition: 'none'}}
           >
             <CopyToClipboard text='mv8.angelov@gmail.com'>
               <Badge color='alert' className={styles.navEmail}
@@ -43,7 +56,7 @@ class EmailButton extends Component {
                 onMouseOut={this._onOut}
                 onClick={this._togglePopover}
               >
-                {this.state.text}
+                {this.state.windowWidth >= 640 ? this.state.text : <i className="material-icons">email</i>}
               </Badge>
             </CopyToClipboard>
           </Popover>
