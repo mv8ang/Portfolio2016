@@ -1,10 +1,10 @@
 export const ProjectListViewData = [
   {
-    coverImage: '../../../src/static/images/scienceathome/cover.jpg',
+    coverImage: 'assets/images/scienceathome/cover.jpg',
     thumbnails: [
-      '../../../src/static/images/scienceathome/Screenshot_1.png',
-      '../../../src/static/images/scienceathome/Screenshot_2.png',
-      '../../../src/static/images/scienceathome/Screenshot_3.png',
+      'assets/images/scienceathome/Screenshot_1.png',
+      'assets/images/scienceathome/Screenshot_2.png',
+      'assets/images/scienceathome/Screenshot_3.png',
     ],
     name: 'scienceathome',
     type: 'Web App',
@@ -19,11 +19,11 @@ export const ProjectListViewData = [
   },
 
   {
-    coverImage: '../../../src/static/images/regnmedpenge/cover.png',
+    coverImage: 'assets/images/regnmedpenge/cover.png',
     thumbnails: [
-      '../../../src/static/images/regnmedpenge/Screenshot_2.png',
-      '../../../src/static/images/regnmedpenge/Screenshot_1.png',
-      '../../../src/static/images/regnmedpenge/Screenshot_3.png',
+      'assets/images/regnmedpenge/Screenshot_2.png',
+      'assets/images/regnmedpenge/Screenshot_1.png',
+      'assets/images/regnmedpenge/Screenshot_3.png',
     ],
     name: 'regnmedpenge',
     type: 'Website',
@@ -37,11 +37,11 @@ export const ProjectListViewData = [
   },
 
   {
-    coverImage: '../../../src/static/images/hivebeat/cover.jpg',
+    coverImage: 'assets/images/hivebeat/cover.jpg',
     thumbnails: [
-      '../../../src/static/images/hivebeat/Screenshot_1.png',
-      '../../../src/static/images/hivebeat/Screenshot_2.png',
-      '../../../src/static/images/hivebeat/Screenshot_3.png',
+      'assets/images/hivebeat/Screenshot_1.png',
+      'assets/images/hivebeat/Screenshot_2.png',
+      'assets/images/hivebeat/Screenshot_3.png',
     ],
     name: 'hivebeat',
     type: 'Web App',
@@ -56,11 +56,11 @@ export const ProjectListViewData = [
   },
 
   {
-    coverImage: '../../../src/static/images/voksen/cover.png',
+    coverImage: 'assets/images/voksen/cover.png',
     thumbnails: [
-      '../../../src/static/images/voksen/Screenshot_1_small.png',
-      '../../../src/static/images/voksen/Screenshot_2_small.png',
-      '../../../src/static/images/voksen/Screenshot_3_small.png',
+      'assets/images/voksen/Screenshot_1_small.png',
+      'assets/images/voksen/Screenshot_2_small.png',
+      'assets/images/voksen/Screenshot_3_small.png',
     ],
     name: 'voksen',
     type: 'Webshop',
@@ -74,10 +74,10 @@ export const ProjectListViewData = [
   },
 
   {
-    coverImage: '../../../src/static/images/portfolio/cover.jpg',
+    coverImage: 'assets/images/portfolio/cover.jpg',
     thumbnails: [
-      '../../../src/static/images/portfolio/Screenshot_1.png',
-      '../../../src/static/images/portfolio/Screenshot_2.png',
+      'assets/images/portfolio/Screenshot_1.png',
+      'assets/images/portfolio/Screenshot_2.png',
     ],
     name: 'portfolio2016',
     type: 'SPA',
