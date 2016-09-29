@@ -1,10 +1,10 @@
 export const ProjectListViewData = [
   {
-    coverImage: '../../../src/static/images/scienceathome/cover.jpg',
+    coverImage: 'http://res.cloudinary.com/dpbwxqq7k/image/upload/v1475181139/cover_pntlzx.jpg',
     thumbnails: [
-      '../../../src/static/images/scienceathome/Screenshot_1.png',
-      '../../../src/static/images/scienceathome/Screenshot_2.png',
-      '../../../src/static/images/scienceathome/Screenshot_3.png',
+      'http://res.cloudinary.com/dpbwxqq7k/image/upload/v1475181139/Screenshot_1_nxcmiu.png',
+      'http://res.cloudinary.com/dpbwxqq7k/image/upload/v1475181139/Screenshot_2_kenonl.png',
+      'http://res.cloudinary.com/dpbwxqq7k/image/upload/v1475181139/Screenshot_3_c1ilub.png',
     ],
     name: 'scienceathome',
     type: 'Web App',
@@ -19,11 +19,11 @@ export const ProjectListViewData = [
   },
 
   {
-    coverImage: '../../../src/static/images/regnmedpenge/cover.png',
+    coverImage: 'http://res.cloudinary.com/dpbwxqq7k/image/upload/v1475181073/cover_yxzmbr.png',
     thumbnails: [
-      '../../../src/static/images/regnmedpenge/Screenshot_2.png',
-      '../../../src/static/images/regnmedpenge/Screenshot_1.png',
-      '../../../src/static/images/regnmedpenge/Screenshot_3.png',
+      'http://res.cloudinary.com/dpbwxqq7k/image/upload/v1475181073/Screenshot_1_afkaw9.png',
+      'http://res.cloudinary.com/dpbwxqq7k/image/upload/v1475181073/Screenshot_2_ianifb.png',
+      'http://res.cloudinary.com/dpbwxqq7k/image/upload/v1475181073/Screenshot_3_fkazkz.png',
     ],
     name: 'regnmedpenge',
     type: 'Website',
@@ -37,11 +37,11 @@ export const ProjectListViewData = [
   },
 
   {
-    coverImage: '../../../src/static/images/hivebeat/cover.jpg',
+    coverImage: 'http://res.cloudinary.com/dpbwxqq7k/image/upload/v1475180413/cover_tkuumb.jpg',
     thumbnails: [
-      '../../../src/static/images/hivebeat/Screenshot_1.png',
-      '../../../src/static/images/hivebeat/Screenshot_2.png',
-      '../../../src/static/images/hivebeat/Screenshot_3.png',
+      'http://res.cloudinary.com/dpbwxqq7k/image/upload/v1475180932/Screenshot_1_vzj0m1.png',
+      'http://res.cloudinary.com/dpbwxqq7k/image/upload/v1475180933/Screenshot_2_oezifo.png',
+      'http://res.cloudinary.com/dpbwxqq7k/image/upload/v1475180933/Screenshot_3_ozr9ki.png',
     ],
     name: 'hivebeat',
     type: 'Web App',
@@ -56,11 +56,11 @@ export const ProjectListViewData = [
   },
 
   {
-    coverImage: '../../../src/static/images/voksen/cover.png',
+    coverImage: 'http://res.cloudinary.com/dpbwxqq7k/image/upload/v1475181266/cover_khnseq.png',
     thumbnails: [
-      '../../../src/static/images/voksen/Screenshot_1_small.png',
-      '../../../src/static/images/voksen/Screenshot_2_small.png',
-      '../../../src/static/images/voksen/Screenshot_3_small.png',
+      'http://res.cloudinary.com/dpbwxqq7k/image/upload/v1475181266/Screenshot_1_small_hruzhx.png',
+      'http://res.cloudinary.com/dpbwxqq7k/image/upload/v1475181266/Screenshot_2_small_zgf3bm.png',
+      'http://res.cloudinary.com/dpbwxqq7k/image/upload/v1475181266/Screenshot_3_small_oplkjx.png',
     ],
     name: 'voksen',
     type: 'Webshop',
@@ -74,10 +74,10 @@ export const ProjectListViewData = [
   },
 
   {
-    coverImage: '../../../src/static/images/portfolio/cover.jpg',
+    coverImage: 'http://res.cloudinary.com/dpbwxqq7k/image/upload/v1475181001/cover_jjfqlg.jpg',
     thumbnails: [
-      '../../../src/static/images/portfolio/Screenshot_1.png',
-      '../../../src/static/images/portfolio/Screenshot_2.png',
+      'http://res.cloudinary.com/dpbwxqq7k/image/upload/v1475181000/Screenshot_1_knche1.png',
+      'http://res.cloudinary.com/dpbwxqq7k/image/upload/v1475181000/Screenshot_2_k9it9c.png',
     ],
     name: 'portfolio2016',
     type: 'SPA',
