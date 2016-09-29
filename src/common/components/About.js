@@ -8,8 +8,8 @@ const About = () => (
       <p>Here will be beautiful content</p>
       <p>
 
-      
-        coverImage: 'https://placeimg.com/880/500/tech',
+
+        {/* coverImage: 'https://placeimg.com/880/500/tech',
         images: [
           'https://placeimg.com/880/500/tech/grayscale',
           'https://placeimg.com/880/500/tech/grayscale',
@@ -23,8 +23,8 @@ const About = () => (
           'My GitHub account is where you can find all the random bits and pieces of coding that I’ve done for myself throughout the years, including this portfolio.',
           'The repositories include cool CSS trickery (css-playground), trying out technologies for the first time (Redux, React-Router, Meteor), as well as templates set-up for later use: bare-bone React and Meteor apps, a CSS framework, and a set-up ready to work with Bower and Gulp.',
         ],
-        url: 'https://github.com/mv8ang?tab=repositories',
-
+        url: 'https://github.com/mv8ang?tab=repositories', */}
+woah
 
       </p>
     </Row>
