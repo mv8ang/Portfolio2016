@@ -1,0 +1,10 @@
+@import '../styles/_sizes.scss';
+@import '../styles/partials/pageTitle';
+@import '../styles/partials/alignCenter';
+
+.profileImage {
+  width: 250px;
+  border-radius: 50%;
+  margin: $default-unit*5 auto;
+  display: block
+}

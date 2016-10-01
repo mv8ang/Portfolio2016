@@ -1,6 +1,7 @@
-@import '../../styles/partials/pageTitle';
 @import '../../styles/sizes';
 @import '../../styles/colors';
+@import '../../styles/partials/pageTitle';
+@import '../../styles/partials/subtitle';
 
 .projectImage {
   margin-bottom: $space-between-images;
@@ -24,8 +25,4 @@
   margin-bottom: 5px;
   font-size: 14px;
   background-color: $light-grey;
-}
-
-.projectSubtitles {
-  color: $light-grey;
 }
