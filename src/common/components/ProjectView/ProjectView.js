@@ -40,11 +40,11 @@ const ProjectView = (props) => {
       </Row>
       <Row>
         <Column small={12} large={4} pushOnLarge={8}>
-          <h5 className={styles.projectSubtitles}>about the project:</h5>
+          <h5 className={styles.subtitle}>about the project:</h5>
           {_generateDescriptionParagraphs(description)}
           <br />
 
-          <h5 className={styles.projectSubtitles}>what I  used:</h5>
+          <h5 className={styles.subtitle}>what I  used:</h5>
           <div className={styles.tagContainer}>
             {_generateTags(technologies)}
           </div>
@@ -52,7 +52,7 @@ const ProjectView = (props) => {
           {url ? (
             <span>
               <br />
-              <h5 className={styles.projectSubtitles}>visit website</h5>
+              <h5 className={styles.subtitle}>visit website</h5>
               <a href={url} target="_blank">
                 <Button color="alert">{url}</Button>
               </a>

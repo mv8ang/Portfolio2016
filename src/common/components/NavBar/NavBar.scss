@@ -68,6 +68,6 @@ $nav-height-control: $default-unit * 5;
 }
 .activeLink {
   background: darken($navbar-bg, 80%);
-  border-bottom: 3px solid $alert-red;
+  border-bottom: 3px solid $call-to-action;
   color: #fff;
 }
