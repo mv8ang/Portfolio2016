@@ -24,6 +24,11 @@ body {
 .page {
   padding-top: 80px;
 }
+@media (max-width: 640px) {
+  .page {
+    padding-top: 120px;
+  }
+}
 .page a {
   color: #ec5840;
 }
@@ -34,6 +39,10 @@ body {
 /* Foundation overwrites */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+p {
+  font-size: 18px;
 }
 
 img {
