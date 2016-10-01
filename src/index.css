@@ -5,10 +5,6 @@
   transition: all 0.5s; /* GREASE */
 }
 
-html {
-  font: 16px/1.6 'Source Sans Pro', sans-serif;
-}
-
 body {
   margin: 0;
   padding: 0;
