@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, IndexLink } from 'react-router'
+import { Block } from 'react-foundation'
 import { menuItems } from '../../lib/menuItems'
 import EmailButton from '../EmailButton/EmailButton'
 import styles from './NavBar.scss'
@@ -22,16 +23,32 @@ const NavBar = () => (
           Mladen Angelov
         </Link>
       </span>
-      <ul className={styles.navItems}>
+      <Block className={styles.navItems} showFor="medium">
         <li>
           <IndexLink to='/' key='index' className={styles.navLink} activeClassName={styles.activeLink}>
             Showcase
           </IndexLink>
         </li>
         {_generateItems}
-      </ul>
+      </Block>
       <EmailButton />
     </div>
+
+    {/* mobile navigation */}
+    <Block showOnlyFor="small">
+      <div className={styles.navBarOuter}>
+        <div className={styles.navBarInnerMobile}>
+          <ul className={styles.navItemsMobile}>
+            <li>
+              <IndexLink to='/' key='index' className={styles.navLink} activeClassName={styles.activeLink}>
+                Showcase
+              </IndexLink>
+            </li>
+            {_generateItems}
+          </ul>
+        </div>
+      </div>
+    </Block>
   </nav>
 )
 

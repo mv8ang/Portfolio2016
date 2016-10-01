@@ -2,8 +2,12 @@
 @import '../../styles/sizes';
 @import '../../styles/colors';
 
-/* TODO: move this to partials/sizes */
-$nav-height-control: $default-unit * 5;
+@mixin navBar {
+  display: flex;
+  max-width: 880px;
+  justify-content: space-between;
+  margin: auto;
+}
 
 .navBarOuter {
   position: fixed;
@@ -18,23 +22,32 @@ $nav-height-control: $default-unit * 5;
 }
 
 .navBarInner {
-  display: flex;
-  max-width: 880px;
-  justify-content: space-between;
-  margin: auto;
+  @include navBar;
   padding-left: .9375rem;     /* Foundation column */
   padding-right: .9375rem;    /* Foundation column */
 }
 
-.navItems, .navLogo {
+.navBarInnerMobile {
+  @include navBar;
+}
+
+.navItems, .navItems li,
+.navItemsMobile, .navItemsMobile li,
+.navLogo {
   display: inline-block;
   margin: auto auto auto 0;
 }
 
-.navItems {
+.navItemsMobile {
+  width: 100%;
+  text-align: center;
+
   li {
-    display: inline-block;
-    margin: auto auto auto 0;
+    width: 50%;
+
+    a {
+      width: 100%;
+    }
   }
 }
 
