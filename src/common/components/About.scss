@@ -8,3 +8,12 @@
   margin: $default-unit*5 auto;
   display: block
 }
+
+.aboutContent {
+  composes: alignCenter; // used like a mixin
+
+  @media (max-width: $phone) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

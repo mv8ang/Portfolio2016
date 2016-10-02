@@ -14,11 +14,11 @@ const About = () => (
           className={styles.profileImage}
         />
       </Column>
-      <Column small={12} className={styles.alignCenter}>
+      <Column small={12} className={styles.aboutContent}>
         <h1 className={styles.pageTitle}>Woah. Who's that handsome devil?</h1>
-        <p>My name is Mladen! I'm coming straight out of Business Academy Aarhus,
+        <p>My name is Mladén! I'm coming straight out of Business Academy Aarhus,
         where I got my Multimedia Design and Communication degree, and am currently
-        finishing my Digital Concept Development BA top-up programme.</p>
+        finishing my Digital Concept Development BA top-up.</p>
         <p>I'm a front-end developer with over 2 years of experience, and an affinity
         for SCSS and JS frameworks. I stick to best practices, and I always try to
         make the code I push well thought-out and easy to reason about.</p>
