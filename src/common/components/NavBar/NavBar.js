@@ -5,15 +5,13 @@ import { menuItems } from '../../lib/menuItems'
 import EmailButton from '../EmailButton/EmailButton'
 import styles from './NavBar.scss'
 
-const _generateItems = menuItems.map(item => {
-  return (
-    <li>
-      <Link to={item.name} key={`key-${item.name}`} className={styles.navLink} activeClassName={styles.activeLink}>
-        {item.name.charAt(0).toUpperCase() + item.name.slice(1)}
-      </Link>
-    </li>
-  )
-})
+const _generateItems = menuItems.map(item => (
+  <li>
+    <Link to={item.name} key={`key-${item.name}`} className={styles.navLink} activeClassName={styles.activeLink}>
+      {item.name.charAt(0).toUpperCase() + item.name.slice(1)}
+    </Link>
+  </li>
+))
 
 const NavBar = () => (
   <nav className={styles.navBarOuter}>
