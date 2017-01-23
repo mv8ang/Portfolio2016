@@ -1,4 +1,5 @@
 export const ProjectListViewData = [
+  // Science at Home
   {
     coverImage: 'http://res.cloudinary.com/dpbwxqq7k/image/upload/v1475181139/cover_pntlzx.jpg',
     thumbnails: [
@@ -10,7 +11,7 @@ export const ProjectListViewData = [
     type: 'Web App',
     technologies: ['Meteor', 'React', 'Redux', 'ES6', 'SCSS'],
     description: [
-      'ScienceAtHome is a project developed by Aarhus University. It harnesses the brain-power of thousands of people around the world through gamification, and uses the data to help build a quantum computer. Fascinating!',
+      'ScienceAtHome is a project developed by Aarhus University in Denmark. It harnesses the brain-power of thousands of people around the world through gamification, and uses the data to help build a quantum computer. Fascinating!',
       'I was part of a two-man team that turned a hi-fidelity mock-up into an interactive, modular and easy to modify web-app that hosts the project.',
       'Immediately after its release, the website was featured in a number of major online media such as Nature, Science, The Verge, Gizmodo and Ars Technica. It performed extremely well under the high load, and given the tight deadline that we had for finishing it, we were ecstatic.',
       'Working in a close relationship with the amazing team at AU jump-started my love for JS with Meteor and React, and was an eye-opener to ES6',
@@ -18,6 +19,28 @@ export const ProjectListViewData = [
     url: 'https://www.scienceathome.org/',
   },
 
+  //mineisyours
+  {
+    coverImage: 'http://res.cloudinary.com/dpbwxqq7k/image/upload/v1485187019/cover_mf8y0i.png',
+    thumbnails: [
+      'http://res.cloudinary.com/dpbwxqq7k/image/upload/v1485183651/Screenshot_1_m94ilu.png',
+      'http://res.cloudinary.com/dpbwxqq7k/image/upload/v1485183651/Screenshot_2_yzgcho.png',
+      'http://res.cloudinary.com/dpbwxqq7k/image/upload/v1485183651/Screenshot_3_ktqjrx.png',
+    ],
+    name: 'mineisyours',
+    type: 'Web App',
+    technologies: ['React', 'ES6', 'SCSS', 'inline CSS'],
+    description: [
+      'Mine is Yours is a shared economy platform that aims to solve the issues of private lending of objects and make the concept familiar and usable on a daily basis.',
+      'During my spell as a front-end developer with the company, I used JS and SCSS for integrating the design solutions into the product.',
+      'A part of my task was to create the widgets and features planned by the design team. The front-end stack was React-based, so I carried out the task by extracting ES6 into React components, to achieve maximum reusability.',
+      'I was also responsible for designing and programing the flow of many of the UI processes that took place on the site, such as product listing and booking, and account creation.',
+      'Styling was initially done in SCSS modules, but as the project developed, they were replaced almost entirely with inline styles for greater flexibility and even greater code isolation. That also prepared the code for the planned inclusion of JSS or Radium.',
+      'Despite causing a huge interest in the local authorities and community, the project is currently put on hold.'
+    ],
+    url: 'https://mineisyours.dk'
+  },
+  // Regn med Penge
   {
     coverImage: 'http://res.cloudinary.com/dpbwxqq7k/image/upload/v1475181073/cover_yxzmbr.png',
     thumbnails: [
@@ -36,6 +59,26 @@ export const ProjectListViewData = [
     url: 'http://regnmedpenge.dk/',
   },
 
+  // Pento
+  {
+    coverImage: 'http://res.cloudinary.com/dpbwxqq7k/image/upload/v1485188864/cover_ndiuo0.png',
+    thumbnails: [
+      'http://res.cloudinary.com/dpbwxqq7k/image/upload/v1485188864/Screenshot_1_q16gwf.png',
+      'http://res.cloudinary.com/dpbwxqq7k/image/upload/v1485191877/Screenshot_2_vfhid5.png',
+      'http://res.cloudinary.com/dpbwxqq7k/image/upload/v1485191877/Screenshot_3_tt4lej.png'
+    ],
+    name: 'pento',
+    type: 'Web App',
+    technologies: ['React', 'Redux', 'ES6', 'Falcor', 'Chai', 'SCSS/modules'],
+    description: [
+      'Pento is a payroll management service that is still in development. It aspires to change the way accountants run payroll in Denmark by automating many of the processes, and redefining the workflow traditionally found in similar solutions.',
+      'On the programming side of things, my job consisted of developing the front-end of the web app module. That included not only building our own React components while sticking to the design guide, but also using a lot of third-party packages to ensure the adequate flow of information between the server and the client, most notably Redux-Form, Polyglot, and Netflix\'s Falcor.',
+      'Bootstrap was used as a front-end framework, so the stylesheets were both global ones, overwriting Bootstrap settings, and modules, limited to the scope of the respective component. This helped to maintain DRY code with minimum overwriting and chaos.',
+      'This project also introduced me to basic unit testing with Mocha and Chai.'
+    ],
+    url: 'https://pento.dk/'
+  },
+  // Hivebeat
   {
     coverImage: 'http://res.cloudinary.com/dpbwxqq7k/image/upload/v1475180413/cover_tkuumb.jpg',
     thumbnails: [
@@ -55,6 +98,7 @@ export const ProjectListViewData = [
     url: 'https://www.hivebeat.com/',
   },
 
+  // Voksen
   {
     coverImage: 'http://res.cloudinary.com/dpbwxqq7k/image/upload/v1475181266/cover_khnseq.png',
     thumbnails: [
@@ -73,6 +117,7 @@ export const ProjectListViewData = [
     ],
   },
 
+  // Portfolio
   {
     coverImage: 'http://res.cloudinary.com/dpbwxqq7k/image/upload/v1475181001/cover_jjfqlg.jpg',
     thumbnails: [
